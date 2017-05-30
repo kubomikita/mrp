@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<document>
+  <datasets>
+    <dataset0>
+      <rows>
+        <row>
+          <fields>
+            <idr>0</idr>
+            <idfak>0</idfak>
+            <typ_radku>0</typ_radku>
+            <typ_sum>0</typ_sum>
+            <text>AAAAAAAAAAAAAAAAAAA</text>
+            <mj>AAA</mj>
+            <cenamj>0</cenamj>
+            <slevamj>0</slevamj>
+            <dph>0</dph>
+            <sadzbadph>0</sadzbadph>
+            <zlava>0</zlava>
+            <riadok>0</riadok>
+            <stredisko>AAAAAA</stredisko>
+            <cislo_zak>AAAAAAAAAAAAAAA</cislo_zak>
+            <hmotnost>0</hmotnost>
+          </fields>
+        </row>
+      </rows>
+    </dataset0>
+  </datasets>
+</document>
