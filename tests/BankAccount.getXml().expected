@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<document>
+  <datasets>
+    <dataset0>
+      <rows>
+        <row>
+          <fields>
+            <idr>1</idr>
+            <idradr>1</idradr>
+            <banka>AAAAAAAAAAAAAAAAAAA</banka>
+            <pobocka>AAAAAAAAAAAAAAAAAAA</pobocka>
+            <ucet>AAAAAAAAAAAAAAAAAA</ucet>
+            <kodbanky>AAAAAAAAAAAA</kodbanky>
+            <charkod>AAAAAAA</charkod>
+            <mena>AAA</mena>
+            <specisymb>AAAAAAAAAA</specisymb>
+            <swiftcode>AAAAAAAAAAAA</swiftcode>
+            <adresa2>AAAAAAAAAAAAAAAAAAA</adresa2>
+            <adresa3>AAAAAAAAAAAAAAAAAAA</adresa3>
+            <adresa4>AAAAAAAAAAAAAAAAAAA</adresa4>
+            <iban>AAAAAAAAAAAAAAAAAAA</iban>
+          </fields>
+        </row>
+      </rows>
+    </dataset0>
+  </datasets>
+</document>

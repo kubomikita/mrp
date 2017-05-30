@@ -19,11 +19,15 @@ $invoiceItem->addRow(['idr' => 2, 'idfak' => 1, 'cenamj' => 200, ...]);
 $address = new Mrp\Address();
 $address->addRow(['idradr' => 1, 'firma' => 'Company', 'ico' => '11112222', ...]);
 
+$bankAccount = new Mrp\BankAccount();
+$bankAccount->addRow(['idr' => '1', 'idradr' => '1', ...]);
+
 $zip = new ZipArchive();
 if ($zip->open('export.zip', ZipArchive::CREATE) === true) {
 	$zip->addFromString('mrp/FAKVY.XML', $invoice->getXml());
 	$zip->addFromString('mrp/FAKVYPOL.XML', $invoiceItem->getXml());
-	$zip->addFromString('mrp/ADRES.XML', $address->getXml());
+	$zip->addFromString('mrp/FV_ADRES.XML', $address->getXml());
+	$zip->addFromString('mrp/FV_ADRESBAN.XML', $bankAccount->getXml());
 	$zip->close();
 }
 ```
