@@ -13,7 +13,7 @@
     "require": {
         "php": ">=5.4",
         "ext-mbstring": "@dev",
-        "nette/tester": "1.7.x"
+        "nette/tester": "2.0.x-dev"
     },
     "autoload": {
         "psr-4": {
