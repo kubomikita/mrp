@@ -8,7 +8,7 @@ class BankAccount extends Xml
 	 * @param array
 	 * @return \DOMNode
 	 */
-	public function addRow(array $data)
+	public function addRow(array $data): \DOMNode
 	{
 		foreach (['idr', 'idradr'] as $key) {
 			if (!isset($data[$key])) {

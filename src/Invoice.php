@@ -4,7 +4,7 @@ namespace Mrp;
 
 class Invoice extends Xml
 {
-	public function addRow(array $data)
+	public function addRow(array $data): \DOMNode
 	{
 		foreach (['idfak', 'cislo', 'ico'] as $key) {
 			if (!isset($data[$key])) {

@@ -8,7 +8,7 @@ class Address extends Xml
 	 * @param array
 	 * @return \DOMNode
 	 */
-	public function addRow(array $data)
+	public function addRow(array $data): \DOMNode
 	{
 		foreach (['idradr', 'firma', 'ico'] as $key) {
 			if (!isset($data[$key])) {

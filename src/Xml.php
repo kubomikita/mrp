@@ -5,10 +5,10 @@ namespace Mrp;
 abstract class Xml
 {
 	/** @var \DOMDocument */
-	protected $document;
+	protected \DOMDocument $document;
 
 	/** @var \DOMNode */
-	protected $rows;
+	protected \DOMNode $rows;
 
 
 	public function __construct()
@@ -34,7 +34,7 @@ abstract class Xml
 	 * @param array
 	 * @return \DOMNode
 	 */
-	public function addRow(array $data)
+	public function addRow(array $data): \DOMNode
 	{
 		$row = $this->document->createElement('row');
 		$row = $this->rows->appendChild($row);
@@ -53,7 +53,7 @@ abstract class Xml
 	/**
 	 * @return string
 	 */
-	public function getXml()
+	public function getXml(): string
 	{
 		return $this->document->saveXml();
 	}
@@ -65,9 +65,9 @@ abstract class Xml
 	 * @param int
 	 * @return string
 	 */
-	protected function truncate($data, $length)
+	protected function truncate(?string $data, int $length): string
 	{
-		return mb_substr($data, 0, $length, 'UTF-8');
+		return mb_substr($data ?? '', 0, $length, 'UTF-8');
 	}
 }
 
